@@ -1,0 +1,44 @@
+// Sao criadas rotas para cada funcao que se deseja executar
+
+// Criacao de Usuario
+// Listagem de Usuario
+// Edicao de Usuario
+// Remocao de Usuario
+
+//Principais recursos HTTP
+//metodo http
+//url
+
+//metodos: GET POST PUT PATCH DELETE
+
+//GET buscar um recurso do backend (uma lista de usuarios)
+//POST criar algum recurso no backend 
+//PUT editar ou atualizar algum recurso do backend(atualizar um formulario inteiro)
+//PATCH editar ou atualizar alguma informacao especifica de um recurso do backend(atualizar uma linha do formulario)
+//DELETE deletar um recurso
+
+//podemos ter duas url iguais para funcoes diferentes, que serao diferenciadas pelo metodo http utilizado
+
+//JSON JavaScript Object Notation
+//Cabeçalhos (Requisição/Resposta) => Metadados
+//HTTP status code
+
+
+//Formas e envio de parametros nas requisições do front para o back:
+
+Query Parameters: 
+    URL Stateful => Filtros , Paginações (parametros não obrigatórios)
+    http://localhost:3333/users?userId=1&nome=bianca
+
+Route Parameters:
+    Identificação do recurso que está sendo utilizado
+    GET http://localhost:3333/users/1   metodo GET ou seja, buscar, recurso USERS, identificacao 1, ou seja, bucar o user com id 1
+    DELETE http://localhost:3333/users/1  deletar o user com id 1
+
+Request Body:
+    Envio de informações de um fomulário, (passa por HTTPs, ou seja, é criptografado e dificil de ser interceptado no envio)
+    POST http://localhost:3333
+    Edição do recurso, porém os parametros são enviados separadamente, fora da url
+
+    
+
